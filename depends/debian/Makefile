@@ -6,7 +6,7 @@ docker:
 docker_deploy: docker docker_push
 	echo "Pushed to docker, https://hub.docker.com/r/${project}"
 docker_run: docker
-	docker run --ti ${project} /bin/bash
+	docker run -t -i ${project} /bin/bash
 docker_push:
 	docker push ${project}
 docker_tail:
