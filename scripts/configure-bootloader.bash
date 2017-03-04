@@ -8,3 +8,7 @@ label    nuugOS
     kernel /boot/bzImage
     INITRD root=/boot/initrd
 EOL
+
+cat > $iso_dir/isolinux/boot.txt <<EOL
+nuug workshop boot text
+EOL
