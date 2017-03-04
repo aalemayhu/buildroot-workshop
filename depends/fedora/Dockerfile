@@ -11,4 +11,3 @@ RUN dnf install -y perl-ExtUtils-MakeMaker
 
 RUN wget https://buildroot.org/downloads/$VERSION
 RUN tar xvf $VERSION
-WORKDIR /tmp/$VERSION
